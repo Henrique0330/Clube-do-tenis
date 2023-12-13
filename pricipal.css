@@ -386,6 +386,9 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.produtos h3{
+  text-align: center;
+}
 
 .products-container {
   display: flex;
@@ -417,6 +420,7 @@ main {
 .product-item img {
   width: 170px;
   height: 170px;
+  margin: auto;
 }
 
 .button-carrinho {
