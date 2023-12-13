@@ -36,18 +36,6 @@
   /* Para centralizar o texto */
 }
 
-@media screen and (max-width: 768px) {
-  .informacoes {
-    padding: 10px; /* Reduz o padding para economizar espaço */
-  }
-
-  .info-header {
-    margin-bottom: 8px; /* Adiciona espaço entre os itens */
-    font-size: 14px; /* Diminui o tamanho da fonte para telas menores */
-  }
-}
-
-
 .info-header {
   list-style: none;
   margin: 0 30px;
@@ -380,14 +368,26 @@ body.dark .switch::before {
 main {
   padding: 20px;
 }
+.T{
+  text-align: center;
+  margin: 10px;
+}
 
 .produtos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1200px; /* Defina a largura máxima dos produtos */
+  width: 100%; /* Use toda a largura disponível */
+  margin-top: 20px; /* Espaço superior */
+  margin-bottom: 20px; /* Espaço inferior */
+  margin-left: auto;
+  margin-right: auto; /* Centraliza horizontalmente */
 }
+
 .produtos h3{
   text-align: center;
+  font-size: 18px;
 }
 
 .products-container {
@@ -496,6 +496,156 @@ footer {
 .rodape a:hover{
   color: white;
   transition: 0.5s;
+}
+@media (max-width: 1333px){
+  .produtos h3{
+    font-size: 15px;
+  }
+}
+@media (max-width: 1227px){
+  .button-carrinho{
+    font-size: 10px;
+  }
+}
+@media (max-width: 1203px) {
+  .product-item {
+    flex-basis: calc(25% - 20px); /* 25% para exibir 4 produtos por linha */
+  }
+}
+@media (max-width: 1061px) {
+  .info-header {
+    font-size: 14px; /* Define o tamanho da fonte para 14 pixels */
+  }
+
+  .info-header a {
+    font-size: 14px; /* Define o tamanho da fonte dos links para 14 pixels */
+  }
+}
+@media (max-width: 1015px) {
+  .product-item {
+    flex-basis: calc(33.33% - 20px); /* 33.33% para exibir 3 produtos por linha */
+  }
+}
+  @media (max-width: 1005px) {
+    .info-header{
+      font-size: 10px;
+    }
+    .info-header a{
+      font-size: 10px;
+    }
+}
+@media (max-width: 900px) {
+  .carousel {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .wrapper i {
+    font-size: 1rem; /* Reduz o tamanho das setas */
+  }
+
+  .carousel img {
+    max-width: 100%; /* Garante que as imagens se ajustem ao tamanho do carousel */
+    height: auto;
+  }
+    .wrapper i:first-child {
+      left: -5px; /* Ajusta a posição da seta esquerda */
+    }
+  
+    .wrapper i:last-child {
+      right: -5px; /* Ajusta a posição da seta direita */
+    }
+}
+  @media (max-width: 800px){
+    .info-header{
+      margin: 0 8px;
+    }
+  }
+
+  @media (max-width: 776px) {
+    .product-item {
+        width: calc(50% - 20px);
+
+    }
+}
+@media (max-width: 768px) {
+  .informacoes {
+    padding: 10px; /* Reduz o padding para economizar espaço */
+  }
+
+  .info-header {
+    margin-bottom: 8px; /* Adiciona espaço entre os itens */
+  }
+}
+
+
+@media (max-width: 650px){
+  .carousel img{
+    width: 80px;
+    height: auto;
+  }
+}
+@media (max-width: 575px) {
+  .product-item {
+    flex-basis: calc(100% - 20px); /* 100% para exibir 1 produto por linha */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+@media (max-width: 562px){
+  .carousel img{
+    width: 65px;
+    height: auto;
+  }
+  .wrapper i:first-child {
+    left: -2px; /* Ajusta a posição da seta esquerda */
+  }
+
+  .wrapper i:last-child {
+    right: -2px; /* Ajusta a posição da seta direita */
+  }
+  .wrapper i {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 500px){
+  .carousel img{
+    width: 55px;
+    height: auto;
+  }
+  .wrapper i:first-child {
+    left: 0px; /* Ajusta a posição da seta esquerda */
+  }
+
+  .wrapper i:last-child {
+    right: 0px; /* Ajusta a posição da seta direita */
+  }
+
+}
+@media (max-width: 420px){
+  .carousel img{
+    width: 30px;
+    height: auto;
+  }
+  .wrapper i:first-child {
+    left: 0px; /* Ajusta a posição da seta esquerda */
+  }
+  
+  .wrapper i:last-child {
+    right: 0px; /* Ajusta a posição da seta direita */
+  }
+  .wrapper i{
+    width: 20px;
+    height: 20px;
+  }
+  .info-header{
+    font-size: 7px;
+  }
+  .info-header a{
+    font-size: 7px;
+  }
+  
 }
 
 
