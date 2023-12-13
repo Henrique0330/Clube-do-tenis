@@ -36,6 +36,18 @@
   /* Para centralizar o texto */
 }
 
+@media screen and (max-width: 768px) {
+  .informacoes {
+    padding: 10px; /* Reduz o padding para economizar espaço */
+  }
+
+  .info-header {
+    margin-bottom: 8px; /* Adiciona espaço entre os itens */
+    font-size: 14px; /* Diminui o tamanho da fonte para telas menores */
+  }
+}
+
+
 .info-header {
   list-style: none;
   margin: 0 30px;
@@ -73,11 +85,11 @@
 }
 
 .wrapper i:first-child {
-  left: -23px;
+  left: -89px;
 }
 
 .wrapper i:last-child {
-  right: -23px;
+  right: -60px;
 }
 
 .wrapper .carousel {
@@ -435,6 +447,9 @@ main {
 
 h2 {
   color: black;
+}
+
+.T{
   margin-left: 30px;
 }
 
@@ -474,5 +489,6 @@ footer {
   color: white;
   transition: 0.5s;
 }
+
 
 /*fim */
