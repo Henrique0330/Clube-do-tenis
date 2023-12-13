@@ -406,6 +406,9 @@ main {
   box-sizing: border-box;
   border: 2px solid #CCC;
 }
+.product-item p{
+  text-align: center;
+}
 
 .product-item a {
   text-decoration: none;
@@ -431,6 +434,7 @@ main {
   border-radius: 5px;
   padding: 10px;
   font-size: 15px;
+  text-align: center;
 }
 
 .button-carrinho:hover {
